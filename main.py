@@ -47,6 +47,10 @@ def text_editor():
    fr_buttons.grid(row=0, column=0, sticky='ns')
    txt_edit.grid(row=0, column=1, sticky='nsew')
 
+   window.bind("<Control-s>", lambda x: save_file())
+   window.bind("<Control-o>", lambda x: open_file())
+
+
    window.mainloop()
 
 
